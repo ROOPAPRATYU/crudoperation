@@ -12,8 +12,8 @@ API Endpoints
 or
 Additionally, if you want to containerize your application using Docker, you can create a Dockerfile and build a Docker image
 To build the Docker image, navigate to the project directory containing the Dockerfile and run the following command:
-docker build -t flask-app .
-docker run -p 5000:5000 flask-app
+docker build -t src .
+docker run -p 5000:5000 src
 
 The application provides the following REST API endpoints:
 
