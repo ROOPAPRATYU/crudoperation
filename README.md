@@ -9,6 +9,12 @@ Run the application:set FLASK_APP=app.py
 flask run
 The application should now be running at http://localhost:5000.
 API Endpoints
+or
+Additionally, if you want to containerize your application using Docker, you can create a Dockerfile and build a Docker image
+To build the Docker image, navigate to the project directory containing the Dockerfile and run the following command:
+docker build -t flask-app .
+docker run -p 5000:5000 flask-app
+
 The application provides the following REST API endpoints:
 
 GET /users: Returns a list of all users.
